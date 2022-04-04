@@ -1,0 +1,47 @@
+.header-mypage {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-gap: 1em;
+  grid-auto-rows: minmax(100px, auto);
+  background-color: #5c636e;
+}
+
+.header-mypage > div{
+  padding: 1em;
+}
+
+.main-mypage {
+  display: grid;
+  grid-auto-rows: minmax(600px, auto);
+}
+
+.main-mypage > div{
+padding: 1em;
+}
+
+#navbar-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar-menu > li {
+  float: left;
+}
+
+#navbar-menu > li a {
+  display: block;
+  text-align: center;
+  padding: 15px;
+  color: black;
+}
+
+#navbar-menu > li a:hover {
+  color: red;
+}
+
+#home-mypage {
+background-size: 100% 100%;
+color: black;
+text-align: center;
+}
