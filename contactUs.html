@@ -20,19 +20,6 @@
     </ul>
   </div>
   <div>
-    <button onclick="showLogin();">
-    <form>
-  <fieldset class="show-login">
-    <legend>Login</legend>
-    <label for="username">Username:</label><br>
-        <input type="text" id="username" name="username"><br>
-        <br>
-        <label for="pwd">Password:</label><br>
-        <input type="password" id="password" name="password">
-    <br><br>
-  <input type="submit" id="submit" value="Submit" onclick="showMsg(); event.preventDefault(); validateForm();">
-</fieldset>
-</form>
   </div>
 <br>
 <div class="header-image"><img class="header-img" src="pexels-marcio-norris-3488259.jpg"></div>
@@ -40,11 +27,37 @@
 </header>
 <main>
   <div class="main-mypage">
-
-    <div id="">
+    <div></div>
+    <div class="contactUs-container">
+  <div style="text-align:center">
+    <h2>Contact us</h2>
+    <p>Tell us about your dream day and we will make come true: </p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="pexels-aleksandr-neplokhov-1371801.jpg" style="width: 400px;">
     </div>
-    <div id="">
+    <div class="column">
+      <form id="submitForm" onsubmit="validationSubmition()">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name..">
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="Your email..">
+        <label for="style">Wedding style</label>
+        <select id="style" name="style">
+          <option value="Romantic">Romantic</option>
+          <option value="Country chic">Country chic</option>
+          <option value="Irish traditional">Irish traditional</option>
+          <option value="Bohemian Wedding">Bohemian Wedding</option>
+        </select>
+        <label for="text">Wedding prefereces</label>
+        <textarea id="text" name="text" placeholder="..." style="height:150px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
     </div>
+  </div>
+</div>
+<div></div>
   </div>
 </main>
 <footer class="footer">

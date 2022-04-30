@@ -19,19 +19,22 @@
     <li><a href="contactUs.html">Contact us</a></li>
   </ul>
 </div>
-<div>
-<button type="button" class="button-login" onclick="showLogin();">Couple login</button>
+<div class="button-div"><button type="button" class="button-login" onclick="showLogin();">Couple login</button></div>
+<br>
+<div class="videoPlayerContainer">
+<video autoplay muted id="videoPlayer" width="600px" height="300px">
+  <source autoplay src="flowerVideo.mp4"  src="cheersVideo.mp4" type="video/mp4">
+</video>
+</div>
 <form id="login-form" onsubmit="event.preventDefault(); validateForm();">
-<fieldset class="show-login">
+<fieldset id="show-login" style="display: none;">
 <legend>Login</legend>
 <label for="username">Username:</label><br>
     <input type="text" id="username" name="username"><br>
     <br>
     <label for="pwd">Password:</label><br>
-    <input type="password" id="password" name="password">
+    <input type="text" id="password" name="password">
     <br><br>
-    <div class="form-group">
-      <div class="col-sm-offset-2 col-sm-10">
         <div class="checkbox">
           <label><input type="checkbox" name="remember"> Remember me</label>
         </div>
@@ -40,21 +43,13 @@
 </fieldset>
 </form>
 </div>
-<br>
-<div class="videoPlayerContainer">
-<video autoplay muted id="videoPlayer" width="600px" height="300px">
-  <source autoplay src="flowerVideo.mp4"  src="cheersVideo.mp4" type="video/mp4">
-</video>
-</div>
-</div>
 </header>
 <main>
   <div class="main-mypage">
     <div id="left-side">
     </div>
-      </div>
-      <div id="right-side">
-      </div>
+    <div id="right-side">
+    </div>
   </div>
 </main>
 <footer class="footer">

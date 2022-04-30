@@ -31,8 +31,25 @@ function showRoom4(){
     $('.show-room4').show();
 }
 
+function validationSubmition(){
+  let x=document.forms["submitForm"]["name"].value;
+  let y=document.forms["submitForm"]["email"].value;
+  if (x==null || x==""){
+    alert("Name must be filled out");
+  }else if (y ==null || y.length < 7){
+    alert("email must be filled out");
+    return false;
+    } else {alert("Thank you. We will send you same wedding options");
+  }
+}
+
 function showLogin(){
-  $('.show-login').show();
+  let x = document.getElementById("show-login");
+  if (x.style.display == "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
 }
 
 //login validations

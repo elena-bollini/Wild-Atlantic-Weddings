@@ -19,6 +19,7 @@
 
 #header-logo{
   height: 80px;
+  padding-left: 10px;
 }
 
 #navbar-menu {
@@ -110,6 +111,62 @@ text-align: center;
 }
 
 /* hidden cont form */
-p.show-detail1, p.show-detail2, p.show-detail3, p.show-room1, p.show-room2, p.show-room3, p.show-room4, fieldset.show-login {
+p.show-detail1, p.show-detail2, p.show-detail3, p.show-room1, p.show-room2, p.show-room3, p.show-room4 {
   display: none;
+}
+#show-login{
+  display: none;
+}
+
+.button-div{
+  padding-right: 10px;
+}
+
+/*  style of contact us page */
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }

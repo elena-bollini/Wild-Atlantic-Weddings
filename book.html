@@ -8,27 +8,42 @@
 </head>
 <body>
   <header>
-    <div class="header-mypage">
+  <div class="header-mypage">
   <div><img id="header-logo" src="MicrosoftTeams-image.png"></div>
   <div id="header-navbar">
-    <ul id="navbar-menu">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="venues.html">Venues</a></li>
-      <li><a href="weddings.html">wedding extra</a></li>
-      <li><a href="book.html">Book</a></li>
-      <li><a href="contactUs.html">Contact us</a></li>
-    </ul>
+  <ul id="navbar-menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="venues.html">Venues</a></li>
+    <li><a href="weddings.html">wedding extra</a></li>
+    <li><a href="book.html">Book</a></li>
+    <li><a href="contactUs.html">Contact us</a></li>
+  </ul>
   </div>
-  <div>
-    <button id="header-login" href="login.html">Login</button>
+  <div class="button-div"><button type="button" class="button-login" onclick="showLogin();">Couple login</button></div>
+  <br>
+  <div class="videoPlayerContainer">
+  <video autoplay muted id="videoPlayer" width="650px" height="451px">
+    <source autoplay src="cheersVideo.mp4"  src="cheersVideo.mp4" type="video/mp4">
+  </video>
   </div>
-<br>
-<div class="videoPlayerContainer">
-<video autoplay muted id="videoPlayer" width="650px" height="451px">
-  <source autoplay src="cheersVideo.mp4"  src="cheersVideo.mp4" type="video/mp4">
-</video>
-</div>
-</header>
+  <form id="login-form" onsubmit="event.preventDefault(); validateForm();">
+  <fieldset id="show-login" style="display: none;">
+  <legend>Login</legend>
+  <label for="username">Username:</label><br>
+    <input type="text" id="username" name="username"><br>
+    <br>
+    <label for="pwd">Password:</label><br>
+    <input type="text" id="password" name="password">
+    <br><br>
+        <div class="checkbox">
+          <label><input type="checkbox" name="remember"> Remember me</label>
+        </div>
+  <br>
+  <input type="submit" id="submit" value="Submit">
+  </fieldset>
+  </form>
+  </div>
+  </header>
 <main>
   <div class="main-mypage">
 
