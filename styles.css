@@ -35,21 +35,39 @@
 #navbar-menu > li a {
   display: block;
   text-align: center;
+  font-size: 16px;
   padding: 15px;
   color: #fff;
   text-decoration: none;
+  transition: transform .3s;
 }
 
 #navbar-menu > li a:hover {
   color: #fff;
-  border-style: outset;
-    border-radius: 5px;
-    border-width: thin;
     cursor: pointer;
+    transform: scale(1.5);
 }
 
 .button-login{
   float: right;
+  border-style: outset;
+    border-radius: 8px;
+    box-shadow: 6px 6px #999;
+    cursor: pointer;
+    color: #fff;
+    background-color:  #004053;
+    font-size: 16px;
+    padding: 14px 40px;
+}
+
+.button-login:hover{
+  background-color:  #003342;
+  color: white;
+}
+
+.button-login:active{
+  box-shadow: 3px 3px #666;
+  transform: translateY(4px);
 }
 
 .header-img{
