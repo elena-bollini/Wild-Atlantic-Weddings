@@ -9,6 +9,10 @@
   background-color:  #004053;
   color: #fff;
   font-family: 'EB Garamond', sans-serif;
+
+  /* Set a specific height */
+  max-height: 100px;
+
 }
 
 .header-mypage > div{
@@ -89,6 +93,19 @@
   grid-auto-rows: minmax(600px, auto);
   justify-items: center;
   background-color: #F1EBE4;
+
+  /* The image used */
+  background-image: url("pexels-pixabay-68570.jpg");
+
+
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
 }
 
 .main-mypage > div{
@@ -134,6 +151,7 @@ p.show-detail1, p.show-detail2, p.show-detail3, p.show-room1, p.show-room2, p.sh
 }
 #show-login{
   display: none;
+  background-color: #004053;
 }
 
 .button-div{
