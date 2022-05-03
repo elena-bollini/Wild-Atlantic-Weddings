@@ -8,31 +8,48 @@
 </head>
 <body>
   <header>
-    <div class="header-mypage">
+  <div class="header-mypage">
   <div><img id="header-logo" src="MicrosoftTeams-image.png"></div>
   <div id="header-navbar">
-    <ul id="navbar-menu">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="aboutUs.html">About us</a></li>
-      <li><a href="venues.html">Venues</a></li>
-      <li><a href="weddings.html">wedding extra</a></li>
-      <li><a href="book.html">Book</a></li>
-      <li><a href="contactUs.html" style="text-decoration: underline;">Contact us</a></li>
-    </ul>
+  <ul id="navbar-menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="aboutUs.html">About us</a></li>
+    <li><a href="venues.html">Venues</a></li>
+    <li><a href="weddings.html">Extra</a></li>
+    <li><a href="book.html">Book</a></li>
+    <li><a href="contactUs.html" style="text-decoration: underline;">Contact us</a></li>
+  </ul>
   </div>
-  <div>
+  <div class="button-div"><button type="button" class="button-login" onclick="showLogin();">Couple login</button></div>
+  <br>
+  <div></div>
+  <div class="container-form">
+  <form id="login-form" onsubmit="event.preventDefault(); validateForm();">
+  <fieldset id="show-login" style="display: none;">
+  <legend Style="color: white; background-color: #004053;">Login</legend>
+  <label for="username">Username:</label><br>
+    <input type="text" id="username" name="username"><br>
+    <br>
+    <label for="pwd">Password:</label><br>
+    <input type="text" id="password" name="password">
+    <br><br>
+        <div class="checkbox">
+          <label><input type="checkbox" name="remember"> Remember me</label>
+        </div>
+  <br>
+  <input type="submit" id="submit" value="Submit">
+  </fieldset>
+  </form>
+</div>
   </div>
-<br>
-<div class="header-image"><img class="header-img" src="pexels-marcio-norris-3488259.jpg"></div>
-  </div>
-</header>
+  </header>
 <main>
   <div class="main-mypage">
     <div></div>
     <div class="contactUs-container">
   <div style="text-align:center">
-    <h2>Contact us</h2>
-    <p>Tell us about your dream day and we will make come true: </p>
+    <h2 style="color:white">Contact us</h2>
+    <p style="color:white">Tell us about your dream day and we will make it come true: </p>
   </div>
   <div class="row">
     <div class="column">
@@ -40,18 +57,20 @@
     </div>
     <div class="column">
       <form id="submitForm" onsubmit="validationSubmition()">
-        <label for="name">Name</label>
+        <label for="name" style="color:white">Name</label>
         <input type="text" id="name" name="name" placeholder="Your name..">
-        <label for="email">Email</label>
+        <label for="email" style="color:white">Email</label>
         <input type="text" id="email" name="email" placeholder="Your email..">
-        <label for="style">Wedding style</label>
+        <label for="style" style="color:white">Wedding style</label>
         <select id="style" name="style">
           <option value="Romantic">Romantic</option>
           <option value="Country chic">Country chic</option>
           <option value="Irish traditional">Irish traditional</option>
           <option value="Bohemian Wedding">Bohemian Wedding</option>
         </select>
-        <label for="text">Wedding prefereces</label>
+        <label for="date" style="color:white">Your wedding date:</label>
+        <input type="date" id="wedDate" name="date"><br><br>
+        <label for="text" style="color:white">Wedding prefereces</label>
         <textarea id="text" name="text" placeholder="..." style="height:150px"></textarea>
         <input type="submit" value="Submit">
       </form>

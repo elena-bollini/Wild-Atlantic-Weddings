@@ -15,7 +15,7 @@
     <li><a href="index.html">Home</a></li>
     <li><a href="aboutUs.html">About us</a></li>
     <li><a href="venues.html" style="text-decoration: underline;">Venues</a></li>
-    <li><a href="weddings.html">wedding extra</a></li>
+    <li><a href="weddings.html">Extras</a></li>
     <li><a href="book.html">Book</a></li>
     <li><a href="contactUs.html">Contact us</a></li>
   </ul>
@@ -23,6 +23,7 @@
   <div class="button-div"><button type="button" class="button-login" onclick="showLogin();">Couple login</button></div>
   <br>
   <div class="header-imge"></div>
+  <div class="container-form">
   <form id="login-form" onsubmit="event.preventDefault(); validateForm();">
   <fieldset id="show-login" style="display: none;">
   <legend Style="color: white; background-color: #004053;">Login</legend>
@@ -39,6 +40,7 @@
   <input type="submit" id="submit" value="Submit">
   </fieldset>
   </form>
+</div>
   </div>
   </header>
 <main>
@@ -61,6 +63,44 @@
             <br>
       </fieldset>
     </div>
+
+    <!--new code for venue layout-->
+    <div class="venueRows">
+
+      <div class="venues">
+
+          <img class="venueImages" src="ashfordCastle.jpg" alt="Ashford Castle">
+            <h2 class="venueTitle"> Ashford Castle - &starf; &starf; &starf; &starf; &starf;</h2>
+              <p>Guests: 166 </p>
+              <p>Sleeps: 166 in 83 rooms.</p>
+              <p>Church: Yes</p>
+
+              <p>  Ashford Castle is one of the most unique wedding venues in Ireland, offering an unparalleled romantic castle experience. With two churches located in and around the five-star castle hotel grounds, and with rooms licensed for civil ceremonies, both religious and civil ceremonies can be accommodated for intimate weddings up to 40 or more, or larger affairs of up to 166.</p>
+              </p>
+              <p>Cong, Co. Mayo, Ireland</p>
+      </div>
+
+      <div class ="venues">
+          <img class="venueImages" src="dromolandCastle.jpg" alt="Dromoland Castle">
+            <h2 class="venueTitle">Dromoland Castle - &starf; &starf; &starf; &starf; &starf;</h2>
+            <p>Guests: 300</p>
+            <p>Sleeps: 200 in 97 rooms</p>
+
+            <p>Dromoland is a five-star luxury wedding venue catering for weddings of all sizes. The Brian Boru Hall hosts weddings from 120-300 guests. For smaller celebrations, the Terrace Room can hold 31-70 guests or the Drawing Room has space for 10-30 guests. Irrespective of the size of the wedding, all parties are invited to use the castle's spa, golf course and use the castle's grounds for photography</p>
+            <p>Newmarket-on-Fergus, Co. Clare, Ireland</p>
+      </div>
+
+      <div class="venues">
+          <img class="venueImages" src="delphiResort.jpg" alt="Delphi Resort">
+            <h2 class="venueTitle">Delphi Resort -&starf; &starf; &starf; &starf; &star; </h2>
+            <p>Guests: 200</p>
+            <p>Sleeps: 150 in 75 rooms</p>
+
+            <p>Whether you’re planning a traditional wedding celebration, a civil ceremony or wedding after-party, Delphi Resort Hotel Connemara is the perfect wedding venue. Nestled amidst the stunning Delphi Valley, Delphi Resort is set within 200 acres of forest in County Galway. Surrounded by the majestic Mweelrea and Twelve Bens mountain ranges, Delphi Resort has stood as the most idyllic backdrop to hundreds of love stories and, we hope you’ll agree, will make the perfect setting for the beginning of yours.</p>
+            <p>Leenaun, Co. Galway, Ireland </p>
+      </div>
+    </div><!--end of new code-->
+
   </div>
 </main>
 <footer class="footer">

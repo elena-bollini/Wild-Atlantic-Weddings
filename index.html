@@ -3,6 +3,8 @@
 <head>
   <title>Wild Atlantic Wedding</title>
   <link rel="favicon" type="image" href="favicon2.ico">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="styles.css">
   <script src="script.js"></script>
 </head>
@@ -15,7 +17,7 @@
     <li><a href="index.html" style="text-decoration: underline;">Home</a></li>
     <li><a href="aboutUs.html">About us</a></li>
     <li><a href="venues.html">Venues</a></li>
-    <li><a href="weddings.html">wedding extra</a></li>
+    <li><a href="weddings.html">Extras</a></li>
     <li><a href="book.html">Book</a></li>
     <li><a href="contactUs.html">Contact us</a></li>
   </ul>
@@ -23,22 +25,41 @@
 <div class="button-div"><button type="button" class="button-login" onclick="showLogin();">Couple login</button></div>
 <br>
 <div></div>
+<div class="container-form">
 <form id="login-form" onsubmit="event.preventDefault(); validateForm();">
 <fieldset id="show-login" style="display: none;">
 <legend Style="color: white; background-color: #004053;">Login</legend>
 <label for="username">Username:</label><br>
-    <input type="text" id="username" name="username"><br>
-    <br>
-    <label for="pwd">Password:</label><br>
-    <input type="text" id="password" name="password">
-    <br><br>
-        <div class="checkbox">
-          <label><input type="checkbox" name="remember"> Remember me</label>
-        </div>
+  <input type="text" id="username" name="username"><br>
+  <br>
+  <label for="pwd">Password:</label><br>
+  <input type="text" id="password" name="password">
+  <br><br>
+      <div class="checkbox">
+        <label><input type="checkbox" name="remember"> Remember me</label>
+      </div>
 <br>
 <input type="submit" id="submit" value="Submit">
 </fieldset>
 </form>
+</div><div class="container-form">
+<form id="login-form" onsubmit="event.preventDefault(); validateForm();">
+<fieldset id="show-login" style="display: none;">
+<legend Style="color: white; background-color: #004053;">Login</legend>
+<label for="username">Username:</label><br>
+  <input type="text" id="username" name="username"><br>
+  <br>
+  <label for="pwd">Password:</label><br>
+  <input type="text" id="password" name="password">
+  <br><br>
+      <div class="checkbox">
+        <label><input type="checkbox" name="remember"> Remember me</label>
+      </div>
+<br>
+<input type="submit" id="submit" value="Submit">
+</fieldset>
+</form>
+</div>
 </div>
 </header>
 <main>
@@ -46,7 +67,46 @@
 
     <div id="left-side">
     </div>
-    <div class="videoPlayerContainer">
+    <div>
+      <h2 style="text-align:center; height:100px; color:white">Our spectacular wild Atlantic coast... for your perfect wedding day</h2>
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" style="width:70%">
+<div class="carousel-indicators">
+  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+</div>
+<div class="carousel-inner">
+  <div class="carousel-item active">
+    <img src="pexels-trung-nguyen-2959192.jpg" class="d-block w-100" alt="bride&groom">
+    <div class="carousel-caption d-none d-md-block">
+      <h5>Sarah & John</h5>
+      <p>Thank you from make our wedding perfect</p>
+    </div>
+  </div>
+  <div class="carousel-item">
+    <img src="pexels-leah-kelley-540522.jpg" class="d-block w-100" alt="Danielle">
+    <div class="carousel-caption d-none d-md-block">
+      <h5>Danielle</h5>
+      <p>The romance that I have always dreamt about</p>
+    </div>
+  </div>
+  <div class="carousel-item">
+    <img src="pexels-asad-photo-maldives-1024983.jpg" class="d-block w-100" alt="Michael & Dana">
+    <div class="carousel-caption d-none d-md-block">
+      <h5>Michael & Dana</h5>
+      <p>You realised our magical moment</p>
+    </div>
+  </div>
+</div>
+<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Next</span>
+</button>
+</div>
     </div>
     <div id="right-side">
     </div>

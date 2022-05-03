@@ -15,7 +15,7 @@
     <li><a href="index.html">Home</a></li>
     <li><a href="aboutUs.html">About us</a></li>
     <li><a href="venues.html">Venues</a></li>
-    <li><a href="weddings.html" style="text-decoration: underline;">wedding extra</a></li>
+    <li><a href="weddings.html" style="text-decoration: underline;">Extras</a></li>
     <li><a href="book.html">Book</a></li>
     <li><a href="contactUs.html">Contact us</a></li>
   </ul>
@@ -23,6 +23,7 @@
   <div class="button-div"><button type="button" class="button-login" onclick="showLogin();">Couple login</button></div>
   <br>
   <div class="header-image"></div>
+  <div class="container-form">
   <form id="login-form" onsubmit="event.preventDefault(); validateForm();">
   <fieldset id="show-login" style="display: none;">
   <legend Style="color: white; background-color: #004053;">Login</legend>
@@ -40,6 +41,7 @@
   </fieldset>
   </form>
   </div>
+</div>
   </header>
 <main>
   <div class="main-mypage">
@@ -61,6 +63,29 @@
       </fieldset>
     </div>
     <div id="">
+      <!--new code for venue layout-->
+    <div class="extras">
+
+      <div class="extrasDiv">
+
+          <img class="venueImages" src="catering.jpeg" alt="Catering">
+            <h2 class="venueTitle"> Catering</h2>
+
+      </div>
+
+      <div class ="extrasDiv">
+          <img class="venueImages" src="decorations.jpeg" alt="Decorations">
+            <h2 class="venueTitle"> Decorations </h2>
+
+      </div>
+
+      <div class="extrasDiv">
+          <img class="venueImages" src="service.jpeg" alt="Church Service">
+            <h2 class="venueTitle"> Church Service</h2>
+
+      </div>
+    </div><!--end of new code-->
+
     </div>
   </div>
 </main>

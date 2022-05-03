@@ -7,11 +7,15 @@
   grid-template-rows: auto;
   grid-auto-rows: minmax(100px, auto);
   background-color:  #004053;
+
   color: #fff;
   font-family: 'EB Garamond', sans-serif;
 
   /* Set a specific height */
   max-height: 100px;
+
+  /*Sticky Navbar*/
+
 
 }
 
@@ -74,6 +78,10 @@
   transform: translateY(4px);
 }
 
+.container-form{
+  z-index: 1;
+}
+
 .header-img{
   background-size: cover;
   background-size: 100% 100%;
@@ -94,8 +102,13 @@
   justify-items: center;
   background-color: #F1EBE4;
 
+
+
+
   /* The image used */
-  background-image: url("pexels-pixabay-68570.jpg");
+  background-image: url("beachBackground.jpg");
+
+
 
 
 
@@ -137,12 +150,18 @@ text-align: center;
 
 /* style specific of WEDDING page */
 #myServicesForm{
-  width: 500px;
+  width: 200px;
+  float: left;
 }
 
 #myServicesForm fieldset{
   padding: 15px;
   border-radius: 10px;
+
+  /*new code*/
+
+  background-color: #004053;
+  color: #ECB40C;
 }
 
 /* hidden cont form */
@@ -152,6 +171,17 @@ p.show-detail1, p.show-detail2, p.show-detail3, p.show-room1, p.show-room2, p.sh
 #show-login{
   display: none;
   background-color: #004053;
+  margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    padding-block-start: 0.35em;
+    padding-inline-start: 0.75em;
+    padding-inline-end: 0.75em;
+    padding-block-end: 0.625em;
+    min-inline-size: min-content;
+    border-width: 2px;
+    border-style: groove;
+    border-color: threedface;
+    border-image: initial;
 }
 
 .button-div{
@@ -205,4 +235,64 @@ input[type=submit]:hover {
   content: "";
   display: table;
   clear: both;
+}
+
+/*venues css*/
+
+.venueRows{
+  width:100%;
+  background-color: none;
+  text-align: left;
+
+
+
+}
+
+.venues{
+
+  display: inline-block;
+  background-color:#004053;
+  color: #e9e9e9;
+  height: 350px;
+  width: 90%;
+  margin: 15px;
+  border-radius: 20px;
+  border: ridge 5px #ECB40C;
+
+
+
+}
+
+.venueImages{
+max-width: 100%;
+max-height: 100%;
+float: left;
+border-radius: 20px;
+margin: 0%;
+padding: 0%;
+
+}
+
+
+.venueTitle{
+  background-color: #ECB40C;
+  text-align: center;
+  color: #004053;
+  font-family:sans-serif;
+  border-radius: 20px;
+}
+
+/*wedding extras CSS*/
+
+.extrasDiv{
+  float: left;
+  display: inline-flexbox;
+  background-color:#004053;
+  color: #e9e9e9;
+  height: 350px;
+  width: 90%;
+  margin: 15px;
+  border-radius: 20px;
+  border: ridge 5px #ECB40C;
+
 }
