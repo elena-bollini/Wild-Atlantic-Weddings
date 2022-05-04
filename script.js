@@ -1,18 +1,23 @@
-//wedding stylwe menu in wedding page
+//wedding style menu in wedding page
 function showOption1(){
-  $('.show-detail1').show();
+  $('.show-detail1').toggle();
 }
 
+
 function showOption2(){
-  $('.show-detail2').show();
+  $('.show-detail2').toggle();
 }
 
 function showOption3(){
-  $('.show-detail3').show();
+  $('.show-detail3').toggle();
 }
 
 function showOption4(){
-    $('.show-detail4').show();
+    $('.show-detail4').toggle();
+}
+
+function showOption5(){
+  $('.show-detail5').toggle();
 }
 
 function showRoom1(){
@@ -31,6 +36,7 @@ function showRoom4(){
     $('.show-room4').show();
 }
 
+// validate login fields
 function validationSubmition(){
   let x=document.forms["submitForm"]["name"].value;
   let y=document.forms["submitForm"]["email"].value;
@@ -43,6 +49,7 @@ function validationSubmition(){
   }
 }
 
+//show hidden login form
 function showLogin(){
   let x = document.getElementById("show-login");
   if (x.style.display == "none") {

@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html  lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Wild Atlantic Wedding</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- <link rel="favicon" type="FaviconLogo" href="...."> -->
   <link rel="stylesheet" href="styles.css">
   <script src="script.js"></script>
+  <style>
+    #main-myPage{
+      background-image: url("bgCatering.jpeg");
+    }
+  </style>
 </head>
 <body>
-  <header>
+  <!-- sticky header with logo, navbar and login -->
+  <header id="stickyNavbar">
   <div class="header-mypage">
   <div><img id="header-logo" src="MicrosoftTeams-image.png"></div>
   <div id="header-navbar">
@@ -22,7 +30,8 @@
   </div>
   <div class="button-div"><button type="button" class="button-login" onclick="showLogin();">Couple login</button></div>
   <br>
-  <div class="header-image"></div>
+  <div></div>
+  <!-- login form -->
   <div class="container-form">
   <form id="login-form" onsubmit="event.preventDefault(); validateForm();">
   <fieldset id="show-login" style="display: none;">
@@ -48,47 +57,78 @@
 
     <div id="">
     </div>
-    <div id="myServicesForm">
+
+    <!--
+    <div class="myExtrasForm">
       <fieldset>
         <legend>Wedding services</legend>
-        <label><input type="radio" class="weddingOption1" name="select-service" onclick="showOption1()">my service go here</label>
-          <p class="show-detail1"> here some options for weddings 111</p>
+        <label><input type="radio" class="weddingOption1" name="select-service" onclick="showOption1()">Catering</label>
+          <p class="show-detail1">          <img class="venueImages" src="catering.jpeg" alt="Catering">
+            <h2 class="venueTitle"> Catering</h2>
+</p>
           <br>
-          <label><input type="radio" class="weddingOption2" name="select-service" onclick="showOption2()">my service go here</label>
+          <label><input type="radio" class="weddingOption2" name="select-service" onclick="showOption2()">Decorations</label>
           <p class="show-detail2"> here some options for weddings 222</p>
           <br>
-        <label><input type="radio" class="weddingOption3" name="select-service" onclick="showOption3()">my service go here</label>
+        <label><input type="radio" class="weddingOption3" name="select-service" onclick="showOption3()">Church Service</label>
           <p class="show-detail3"> here some options for weddings 333</p>
           <br>
       </fieldset>
     </div>
     <div id="">
-      <!--new code for venue layout-->
+
+    -->
+      <!--new code for extras layout-->
     <div class="extras">
 
       <div class="extrasDiv">
 
-          <img class="venueImages" src="catering.jpeg" alt="Catering">
-            <h2 class="venueTitle"> Catering</h2>
 
+            <h2 class="venueTitle"><input type="radio" class="weddingOption1" name="select-service"  onclick="showOption1()" > Catering</h2>
+            <p class="show-detail1">
+            <img class="extraImages" src="catering.jpeg" alt="Catering">
+             Text for catering for up to 500 people, full menu, etc text text text text
+            </p>
       </div>
 
       <div class ="extrasDiv">
-          <img class="venueImages" src="decorations.jpeg" alt="Decorations">
-            <h2 class="venueTitle"> Decorations </h2>
-
+            <h2 class="venueTitle"><input type="radio" class="weddingOption2" name="select-service" onclick="showOption2()"> Decorations </h2>
+            <p class="show-detail2">
+            <img class="extraImages" src="decorations.jpeg" alt="Decorations">
+            To make your dream day even more beauitful we offer a full decoration package that can be completely tailered to your own style and taste! We will transform any function room into a place of awe and beauty and make thos photographs even more special!
+            </p>
       </div>
 
       <div class="extrasDiv">
-          <img class="venueImages" src="service.jpeg" alt="Church Service">
-            <h2 class="venueTitle"> Church Service</h2>
-
+            <h2 class="venueTitle"><input type="radio" class="weddingOption3" name="select-service" onclick="showOption3()"> Church Service</h2>
+            <p class="show-detail3">
+            <img class="extraImages" src="service.jpeg" alt="Church Service">
+            Wild Atlantic Weddings also offer as wedding service
+            </p>
       </div>
+
+      <div class="extrasDiv">
+        <h2 class="venueTitle"><input type="radio" class="weddingOption4" name="select-service" onclick="showOption4()"> Music & Entertainment </h2>
+        <p class="show-detail4">
+        <img class="extraImages" src="jazzBand.jpg" alt="Jazz Band">
+        Wether it's a DJ, a jazz band or an orcherstra or maybe even a comedian or a magician, we have a vast range of options to choose from which will finish your night off in style!
+        </p>
+      </div>
+
+      <div class="extrasDiv">
+        <h2 class="venueTitle"><input type="radio" class="weddingOption5" name="select-service" onclick="showOption5()"> Photography </h2>
+        <p class="show-detail5">
+        <img class="extraImages" src="photographerWed.jpg" alt="Photographer">
+        Here at Wild Atlantic Weddings we pride ourselves in creating the most memorable experience possible for our customers. The most memorable moments should be captured in time and to do so we supply photographers of the highest quality to capture all the moments of your special day.
+        </p>
+  </div>
+
     </div><!--end of new code-->
 
     </div>
-  </div>
+
 </main>
+<!-- footer -->
 <footer class="footer">
 <div class="footer-contact">
 <p>Kildare, Ireland </p>

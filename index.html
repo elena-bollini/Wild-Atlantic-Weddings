@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html  lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Wild Atlantic Wedding</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="favicon" type="image" href="favicon2.ico">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
@@ -9,7 +11,8 @@
   <script src="script.js"></script>
 </head>
 <body>
-  <header>
+  <!-- sticky header with logo, navbar and login -->
+  <header id="stickyNavbar">
   <div class="header-mypage">
 <div><img id="header-logo" src="MicrosoftTeams-image.png"></div>
 <div id="header-navbar">
@@ -25,24 +28,8 @@
 <div class="button-div"><button type="button" class="button-login" onclick="showLogin();">Couple login</button></div>
 <br>
 <div></div>
+<!-- login form -->
 <div class="container-form">
-<form id="login-form" onsubmit="event.preventDefault(); validateForm();">
-<fieldset id="show-login" style="display: none;">
-<legend Style="color: white; background-color: #004053;">Login</legend>
-<label for="username">Username:</label><br>
-  <input type="text" id="username" name="username"><br>
-  <br>
-  <label for="pwd">Password:</label><br>
-  <input type="text" id="password" name="password">
-  <br><br>
-      <div class="checkbox">
-        <label><input type="checkbox" name="remember"> Remember me</label>
-      </div>
-<br>
-<input type="submit" id="submit" value="Submit">
-</fieldset>
-</form>
-</div><div class="container-form">
 <form id="login-form" onsubmit="event.preventDefault(); validateForm();">
 <fieldset id="show-login" style="display: none;">
 <legend Style="color: white; background-color: #004053;">Login</legend>
@@ -64,12 +51,12 @@
 </header>
 <main>
   <div class="main-mypage">
-
     <div id="left-side">
     </div>
     <div>
       <h2 style="text-align:center; height:100px; color:white">Our spectacular wild Atlantic coast... for your perfect wedding day</h2>
-      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" style="width:70%">
+<!-- carousel -->
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" style="width:100%">
 <div class="carousel-indicators">
   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -112,6 +99,7 @@
     </div>
   </div>
 </main>
+<!-- footer -->
 <footer class="footer">
 <div class="footer-contact">
 <p>Kildare, Ireland </p>

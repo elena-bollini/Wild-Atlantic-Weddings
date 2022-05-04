@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html  lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Wild Atlantic Wedding</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- <link rel="favicon" type="FaviconLogo" href="...."> -->
   <link rel="stylesheet" href="styles.css">
   <script src="script.js"></script>
 </head>
 <body>
-  <header>
+  <!-- sticky header with logo, navbar and login -->
+  <header id="stickyNavbar">
   <div class="header-mypage">
   <div><img id="header-logo" src="MicrosoftTeams-image.png"></div>
   <div id="header-navbar">
@@ -23,6 +26,7 @@
   <div class="button-div"><button type="button" class="button-login" onclick="showLogin();">Couple login</button></div>
   <br>
   <div></div>
+  <!-- login form -->
   <div class="container-form">
   <form id="login-form" onsubmit="event.preventDefault(); validateForm();">
   <fieldset id="show-login" style="display: none;">
@@ -53,6 +57,7 @@
     </div>
   </div>
 </main>
+<!-- footer -->
 <footer class="footer">
 <div class="footer-contact">
 <p>Kildare, Ireland </p>

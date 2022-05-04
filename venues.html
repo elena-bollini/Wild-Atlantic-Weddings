@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html  lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Wild Atlantic Wedding</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- <link rel="favicon" type="FaviconLogo" href="...."> -->
   <link rel="stylesheet" href="styles.css">
   <script src="script.js"></script>
 </head>
 <body>
-  <header>
+  <!-- sticky header with logo, navbar and login -->
+  <header id="stickyNavbar">
   <div class="header-mypage">
   <div><img id="header-logo" src="MicrosoftTeams-image.png"></div>
   <div id="header-navbar">
@@ -22,7 +25,8 @@
   </div>
   <div class="button-div"><button type="button" class="button-login" onclick="showLogin();">Couple login</button></div>
   <br>
-  <div class="header-imge"></div>
+  <div></div>
+  <!-- login form -->
   <div class="container-form">
   <form id="login-form" onsubmit="event.preventDefault(); validateForm();">
   <fieldset id="show-login" style="display: none;">
@@ -46,22 +50,7 @@
 <main>
   <div class="main-mypage">
 
-    <div id="myServicesForm">
-      <fieldset>
-        <legend>Venues</legend>
-        <label><input type="radio" class="radioRoom1" name="select-service" onclick="showRoom1()">Classic Rooms</label>
-          <p class="show-room1"> here some options for weddings 111</p>
-          <br>
-          <label><input type="radio" class="radioRoom2" name="select-service" onclick="showRoom2()">Confort Rooms</label>
-          <p class="show-room2"> here some options for weddings 222</p>
-          <br>
-        <label><input type="radio" class="radioRoom3" name="select-service" onclick="showRoom3()">Suite</label>
-          <p class="show-room3"> here some options for weddings 333</p>
-          <br>
-          <label><input type="radio" class="radioRoom4" name="select-service" onclick="showRoom4()">Romantic Suite</label>
-            <p class="show-room4"> here some options for weddings 444</p>
-            <br>
-      </fieldset>
+    <div>
     </div>
 
     <!--new code for venue layout-->
@@ -103,6 +92,7 @@
 
   </div>
 </main>
+<!-- footer -->
 <footer class="footer">
 <div class="footer-contact">
 <p>Kildare, Ireland </p>
