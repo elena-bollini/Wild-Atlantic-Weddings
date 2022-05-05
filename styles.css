@@ -187,7 +187,8 @@ p.show-detail1, p.show-detail2, p.show-detail3, p.show-detail4, p.show-detail5{
 }
 
 /* Style inputs */
-input[type=text], select, textarea {
+
+input[type="text"], input[type="password"], select, textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -196,7 +197,7 @@ input[type=text], select, textarea {
   resize: vertical;
 }
 
-input[type=submit] {
+input[type="submit"] {
   background-color: #04AA6D;
   color: white;
   padding: 12px 20px;
@@ -204,9 +205,10 @@ input[type=submit] {
   cursor: pointer;
 }
 
-input[type=submit]:hover {
+input[type="submit"]:hover {
   background-color: #45a049;
 }
+
 
 /* Style the container/contact section */
 .container {
