@@ -72,3 +72,11 @@ function validateForm(){
 }
 
 // max guests for Venues
+function checkVenue(venue){
+  let value = venue.value;
+  document.getElementById("guestInput").setAttribute('max', value);
+  }
+
+//limit date before today
+var today = new Date().toISOString().split('T')[0];
+   document.getElementById("wedDate").setAttribute('min', today);

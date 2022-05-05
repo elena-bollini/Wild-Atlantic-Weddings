@@ -35,7 +35,7 @@
     <input type="text" id="username" name="username"><br>
     <br>
     <label for="pwd">Password:</label><br>
-    <input type="text" id="password" name="password">
+    <input type="password" id="password" name="password">
     <br><br>
         <div class="checkbox">
           <label><input type="checkbox" name="remember"> Remember me</label>
@@ -54,26 +54,26 @@
 <div id="main-center">
   <!-- booking form -->
   <form class="bookingForm">
-    <div class="cont-venue">
+    <div class="cont-venue" >
       <fieldset style="background-color: #004053">
-        <legend style="background-color: #004053">Design your wedding!</legend>
+        <legend style="background-color: #004053; font: 30px">Design your wedding!</legend>
         <!--venues-->
         <label>Venues</label>
         <br>
-        <select id="dropdownVenues" name="dropdownVenues" onchange="...">
-          <option id="venueAshford" value="166">Ashford Castle - max 166 guestes</option>
+        <select id="dropdownVenues" name="dropdownVenues" onchange="checkVenue(this)">
           <option id="venueDromoland" value="300">Dromoland Castle - max 300 guestes</option>
+          <option id="venueAshford" value="166">Ashford Castle - max 166 guestes</option>
           <option id="venueDelphi" value="200">Delphi Resort - max 200 guestes</option>
         </select>
         <br>
         <label>Number of guests</label>
         <input type="number" id="guestInput" name="quantity" min="0" max="300">
         <br>
+        <br>
         <label class="checkbox">
-        <input type="checkbox" name="selectExtra" value="churchServ" onlick="...">
           Church Service
         </label>
-        <ul>
+        <ul style="list-style: none;">
           <li><label class="checkbox">
           <input type="checkbox" name="selectExtra" value="churchServ" onlick="...">
             recorded wedding march
@@ -86,23 +86,22 @@
           <li>
             <label class="checkbox">
             <input type="checkbox" name="selectExtra" value="churchServ" onlick="...">
-            Ribbons on the church bencs
+            Ribbons on the church banches
             </label></li>
         </ul>
         <br>
         <label class="checkbox">
-        <input type="checkbox" name="selectExtra" value="catering" onlick="...">
           Catering
         </label>
-        <ul>
+        <ul style="list-style: none;">
           <li><label class="checkbox">
           <input type="checkbox" name="selectExtra" value="catering" onlick="...">
-            Appetiser - 2 main course
+            Appetiser & 2 main course
           </label></li>
           <li>
             <label class="checkbox">
             <input type="checkbox" name="selectExtra" value="catering" onlick="...">
-            Appetiser - 3 main course
+            additional course
             </label></li>
           <li>
             <label class="checkbox">
@@ -117,10 +116,9 @@
         </ul>
         <br>
         <label class="checkbox">
-        <input type="checkbox" name="selectExtra" value="decoratione" onlick="...">
           Decoration
         </label>
-        <ul>
+        <ul style="list-style: none;">
           <li><label class="checkbox">
           <input type="checkbox" name="selectExtra" value="decoratione" onlick="...">
             Flowes on the tables
@@ -143,10 +141,9 @@
         </ul>
         <br>
         <label class="checkbox">
-        <input type="checkbox" name="selectExtra" value="decoratione" onlick="...">
           Music & Entertainment
         </label>
-          <ul>
+          <ul style="list-style: none;">
             <li><label class="checkbox">
             <input type="checkbox" name="selectExtra" value="music" onlick="...">
               Band
@@ -164,18 +161,17 @@
           </ul>
         <br>
         <label class="checkbox">
-        <input type="checkbox" name="selectExtra" value="photography" onlick="...">
           Photographic service
         </label>
-        <ul>
+        <ul style="list-style: none;">
           <li><label class="checkbox">
           <input type="checkbox" name="selectExtra" value="photography" onlick="...">
-            all day service - 1 photographer
+            All day service - 1 photographer
           </label></li>
           <li>
             <label class="checkbox">
             <input type="checkbox" name="selectExtra" value="photography" onlick="...">
-              all day service - 2 photographers
+              All day service - 2 photographers
             </label></li>
           <li>
             <label class="checkbox">
@@ -188,6 +184,16 @@
                 Print of 1 canvas 60*80mm
               </label></li>
         </ul>
+        <br>
+        <label class="checkbox">
+          Extra information
+        </label>
+        <br>
+        <textarea id="text" name="text" placeholder="Do you have a favorite flowers?" style="height:50px"></textarea>
+        <textarea id="text" name="text" placeholder="Does your wedding have a theme?" style="height:50px"></textarea>
+        <textarea id="text" name="text" placeholder="Does your wedding have a main color? " style="height:50px"></textarea>
+        <br>
+        <input type="submit" value="Request a quote">
         <br>
     </div>
   </form>
