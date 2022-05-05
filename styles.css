@@ -1,5 +1,8 @@
 /* ~~style common to all the pages~~ */
 
+body {
+  margin: 0;
+}
 /* header*/
 .header-mypage {
   display: grid;
@@ -58,13 +61,13 @@
 .button-login{
   float: right;
   border-style: outset;
-  border-radius: 8px;
-  box-shadow: 6px 6px #999;
+  border-radius: 10px;
+  box-shadow: 2px 2px #999;
   cursor: pointer;
   color: #fff;
   background-color:  #004053;
   font-size: 16px;
-  padding: 14px 40px;
+  padding: 10px 30px;
 }
 
 .button-login:hover{
@@ -114,6 +117,9 @@
 padding: 1em;
 }
 
+fieldset {
+  border-radius: 10px;
+}
 /* footer */
 .footer {
   background-color: #004053;
@@ -150,7 +156,6 @@ padding: 1em;
   min-inline-size: min-content;
   border-width: 2px;
   border-style: groove;
-  border-color: threedface;
   border-image: initial;
 }
 
@@ -205,7 +210,7 @@ input[type=submit]:hover {
 
 /* Style the container/contact section */
 .container {
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: #f2f2f2;
   padding: 10px;
 }
@@ -239,15 +244,15 @@ input[type=submit]:hover {
   height: 350px;
   width: 90%;
   margin: 15px;
-  border-radius: 20px;
-  border: ridge 5px #ECB40C;
+  border-radius: 10px;
+  border: ridge 2px white;
 }
 
 .venueImages {
   max-width: 100%;
   max-height: 100%;
   float: left;
-  border-radius: 20px;
+  border-radius: 10px;
   margin: 0%;
   padding: 0%;
 }
@@ -256,8 +261,8 @@ input[type=submit]:hover {
   background-color: #ECB40C;
   text-align: center;
   color: #004053;
-  font-family:sans-serif;
-  border-radius: 20px;
+  font-family: sans-serif;
+  border-radius: 10px;
 }
 
 /*wedding extras CSS*/
@@ -277,8 +282,8 @@ input[type=submit]:hover {
   height: fit-content;
   background-color:#004053;
   margin: 15px;
-  border-radius: 20px;
-  border: ridge 5px #ECB40C;
+  border-radius: 10px;
+  border: ridge 2px white;
 }
 
 .extraImages{
@@ -288,4 +293,14 @@ input[type=submit]:hover {
   object-position: center;
   max-width: 100%;
   max-height: 100%;
+}
+
+/* style specific to book page */
+
+.bookingForm{
+  color: white;
+}
+
+#guestInput{
+  width: 50px;
 }

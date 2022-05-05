@@ -70,3 +70,5 @@ function validateForm(){
     return false;
   } else {alert("You logged in");}
 }
+
+// max guests for Venues

@@ -49,10 +49,149 @@
   </header>
 <main>
   <div class="main-mypage">
-
     <div id="main-left">
     </div>
-<div id="main-center" class="header-image"></div>
+<div id="main-center">
+  <!-- booking form -->
+  <form class="bookingForm">
+    <div class="cont-venue">
+      <fieldset style="background-color: #004053">
+        <legend style="background-color: #004053">Design your wedding!</legend>
+        <!--venues-->
+        <label>Venues</label>
+        <br>
+        <select id="dropdownVenues" name="dropdownVenues" onchange="...">
+          <option id="venueAshford" value="166">Ashford Castle - max 166 guestes</option>
+          <option id="venueDromoland" value="300">Dromoland Castle - max 300 guestes</option>
+          <option id="venueDelphi" value="200">Delphi Resort - max 200 guestes</option>
+        </select>
+        <br>
+        <label>Number of guests</label>
+        <input type="number" id="guestInput" name="quantity" min="0" max="300">
+        <br>
+        <label class="checkbox">
+        <input type="checkbox" name="selectExtra" value="churchServ" onlick="...">
+          Church Service
+        </label>
+        <ul>
+          <li><label class="checkbox">
+          <input type="checkbox" name="selectExtra" value="churchServ" onlick="...">
+            recorded wedding march
+          </label></li>
+          <li>
+            <label class="checkbox">
+            <input type="checkbox" name="selectExtra" value="churchServ" onlick="...">
+            Cones with confetti or rice
+            </label></li>
+          <li>
+            <label class="checkbox">
+            <input type="checkbox" name="selectExtra" value="churchServ" onlick="...">
+            Ribbons on the church bencs
+            </label></li>
+        </ul>
+        <br>
+        <label class="checkbox">
+        <input type="checkbox" name="selectExtra" value="catering" onlick="...">
+          Catering
+        </label>
+        <ul>
+          <li><label class="checkbox">
+          <input type="checkbox" name="selectExtra" value="catering" onlick="...">
+            Appetiser - 2 main course
+          </label></li>
+          <li>
+            <label class="checkbox">
+            <input type="checkbox" name="selectExtra" value="catering" onlick="...">
+            Appetiser - 3 main course
+            </label></li>
+          <li>
+            <label class="checkbox">
+            <input type="checkbox" name="selectExtra" value="catering" onlick="...">
+              Wedding cake
+            </label></li>
+            <li>
+              <label class="checkbox">
+              <input type="checkbox" name="selectExtra" value="catering" onlick="...">
+              All inclusive wine
+              </label></li>
+        </ul>
+        <br>
+        <label class="checkbox">
+        <input type="checkbox" name="selectExtra" value="decoratione" onlick="...">
+          Decoration
+        </label>
+        <ul>
+          <li><label class="checkbox">
+          <input type="checkbox" name="selectExtra" value="decoratione" onlick="...">
+            Flowes on the tables
+          </label></li>
+          <li>
+            <label class="checkbox">
+            <input type="checkbox" name="selectExtra" value="decoratione" onlick="...">
+              Flowers in the church
+            </label></li>
+          <li>
+            <label class="checkbox">
+            <input type="checkbox" name="selectExtra" value="decoratione" onlick="...">
+              Bouquet
+            </label></li>
+            <li>
+              <label class="checkbox">
+              <input type="checkbox" name="selectExtra" value="decoratione" onlick="...">
+                Baloons
+              </label></li>
+        </ul>
+        <br>
+        <label class="checkbox">
+        <input type="checkbox" name="selectExtra" value="decoratione" onlick="...">
+          Music & Entertainment
+        </label>
+          <ul>
+            <li><label class="checkbox">
+            <input type="checkbox" name="selectExtra" value="music" onlick="...">
+              Band
+            </label></li>
+            <li>
+              <label class="checkbox">
+              <input type="checkbox" name="selectExtra" value="music" onlick="...">
+                classical quartette
+              </label></li>
+            <li>
+              <label class="checkbox">
+              <input type="checkbox" name="selectExtra" value="music" onlick="...">
+                Entertainment for kids
+              </label></li>
+          </ul>
+        <br>
+        <label class="checkbox">
+        <input type="checkbox" name="selectExtra" value="photography" onlick="...">
+          Photographic service
+        </label>
+        <ul>
+          <li><label class="checkbox">
+          <input type="checkbox" name="selectExtra" value="photography" onlick="...">
+            all day service - 1 photographer
+          </label></li>
+          <li>
+            <label class="checkbox">
+            <input type="checkbox" name="selectExtra" value="photography" onlick="...">
+              all day service - 2 photographers
+            </label></li>
+          <li>
+            <label class="checkbox">
+            <input type="checkbox" name="selectExtra" value="photography" onlick="...">
+              2 Photographic books
+            </label></li>
+            <li>
+              <label class="checkbox">
+              <input type="checkbox" name="selectExtra" value="photography" onlick="...">
+                Print of 1 canvas 60*80mm
+              </label></li>
+        </ul>
+        <br>
+    </div>
+  </form>
+</div>
     <div id="main-right">
     </div>
   </div>
