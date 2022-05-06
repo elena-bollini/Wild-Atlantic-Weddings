@@ -3,6 +3,13 @@
 body {
   margin: 0;
 }
+
+h1{
+  font-family: "Goudy Old Style",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow: 3px 3px 2px black;
+  color:white;
+}
+
 /* header*/
 .header-mypage {
   display: grid;
@@ -98,12 +105,12 @@ body {
 /* main */
 .main-mypage {
   display: grid;
-  grid-template-columns: 1fr 6fr 1fr;
+  grid-template-columns: 1fr 4fr 1fr;
   grid-auto-rows: minmax(600px, auto);
   justify-items: center;
   background-color: #F1EBE4;
   font-family: "Goudy Old Style",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
- 
+
 
   /* The image used */
   background-image: url("beachBackground.jpg");
@@ -145,21 +152,17 @@ fieldset {
   text-align: center;
 }
 
-h2{
-  font-family: "Goudy Old Style",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
-}
-
 #indexLogo{
-  height: 450px;
-  width: 450px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
-
-  
+  padding: 30px;
+  width: 60%;
 }
 
+#carouselExampleCaptions{
+  padding: 20px;
+}
 
 #show-login{
   display: none;
@@ -239,7 +242,7 @@ input[type="submit"]:hover {
   float: left;
   width: 50%;
   margin-top: 6px;
-  padding: 20px;
+  padding: 40px;
 }
 
 /* Clear floats after the columns */
@@ -281,7 +284,7 @@ input[type="submit"]:hover {
   text-align: center;
   color: #004053;
   font-family: "Goudy Old Style",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
- 
+
   border-radius: 10px;
 }
 
