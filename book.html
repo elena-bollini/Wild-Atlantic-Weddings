@@ -66,10 +66,15 @@
 <div id="main-center">
   <!-- booking form -->
   <form class="bookingForm">
-    <div class="cont-venue" >
+    <div class="cont-venue">
       <fieldset style="background-color: #004053">
-        <legend style="background-color: #004053; font: 30px">Design your wedding!</legend>
-        <!--venues-->
+        <legend style="background-color: #004053">Design your wedding!</legend>
+        <br>
+		<div>(Please login to book)</div>
+		<br>
+        <label for="date" style="color:white">Your wedding date:</label>
+        <input type="date" id="wedDate" name="date" onchange="checkToday(today)"><br><br>
+		<!--venues-->
         <label>Venues</label>
         <br>
         <select id="dropdownVenues" name="dropdownVenues" onchange="checkVenue(this)">
@@ -81,141 +86,144 @@
         <label>Number of guests</label>
         <input type="number" id="guestInput" name="quantity" min="0" max="300">
         <br>
-        <br>
-        <label class="checkbox">
+		<br>
+ 	   <label class="checkbox">
           Church Service
-        </label>
-        <ul style="list-style: none;">
+ 	 	</label>
+        <ul style="list-style: none">
+		<li><label class="checkbox">
+       		<input type="checkbox" class="price" name="selectExtra" value="200" onlick="...">
+        	Basic Church service  - 200&euro;
+        	</label></li>
           <li><label class="checkbox">
-          <input type="checkbox" name="selectExtra" value="churchServ" onlick="...">
-            Recorded wedding march
+          <input type="checkbox" class="price" name="selectExtra" value="30" onlick="...">
+            Recorded wedding march - 30&euro;
           </label></li>
           <li>
             <label class="checkbox">
-            <input type="checkbox" name="selectExtra" value="churchServ" onlick="...">
-            Cones with confetti or rice
+            <input type="checkbox" class="price" name="selectExtra" value="100" onlick="...">
+            Cones with confetti or rice - 100&euro;
             </label></li>
           <li>
             <label class="checkbox">
-            <input type="checkbox" name="selectExtra" value="churchServ" onlick="...">
-            Ribbons on the church branches
+            <input type="checkbox" class="price" name="selectExtra" value="40" onlick="...">
+            Ribbons on the church benches  - 40&euro;
             </label></li>
         </ul>
         <br>
         <label class="checkbox">
           Catering
         </label>
-        <ul style="list-style: none;">
+        <ul style="list-style: none">
           <li><label class="checkbox">
-          <input type="checkbox" name="selectExtra" value="catering" onlick="...">
-            Appetiser & 2 main course
+          <input type="checkbox" class="pricepp" name="selectExtra" value="40" onlick="...">
+            Appetisers + 2 main courses - 40&euro; pp
           </label></li>
           <li>
             <label class="checkbox">
-            <input type="checkbox" name="selectExtra" value="catering" onlick="...">
-            Additional courses
+            <input type="checkbox" class="pricepp" name="selectExtra" value="8" onlick="...">
+            Additional course (Appetisers + 3 main courses) +8&euro; pp
             </label></li>
           <li>
             <label class="checkbox">
-            <input type="checkbox" name="selectExtra" value="catering" onlick="...">
-              Wedding cake
+            <input type="checkbox" class="pricepp" name="selectExtra" value="5" onlick="...">
+              Wedding cake - 5&euro; pp
             </label></li>
             <li>
               <label class="checkbox">
-              <input type="checkbox" name="selectExtra" value="catering" onlick="...">
-              All inclusive wine
+              <input type="checkbox" class="pricepp" name="selectExtra" value="30" onlick="...">
+              All inclusive wine  - 30&euro; pp
               </label></li>
         </ul>
         <br>
         <label class="checkbox">
           Decoration
         </label>
-        <ul style="list-style: none;">
+        <ul style="list-style: none">
           <li><label class="checkbox">
-          <input type="checkbox" name="selectExtra" value="decoratione" onlick="...">
-            Flowers on the tables
+          <input type="checkbox" class="price" name="selectExtra" value="200" onlick="...">
+            Flowers on the tables  - 200&euro;
           </label></li>
           <li>
             <label class="checkbox">
-            <input type="checkbox" name="selectExtra" value="decoratione" onlick="...">
-              Flowers in the church
+            <input type="checkbox" class="price" name="selectExtra" value="200" onlick="...">
+              Flowers in the church - 200&euro;
             </label></li>
           <li>
             <label class="checkbox">
-            <input type="checkbox" name="selectExtra" value="decoratione" onlick="...">
-              Bouquet
+            <input type="checkbox" class="price" name="selectExtra" value="70" onlick="...">
+              Bouquet - 70&euro;
             </label></li>
             <li>
               <label class="checkbox">
-              <input type="checkbox" name="selectExtra" value="decoratione" onlick="...">
-                Balloons
+              <input type="checkbox" class="price" name="selectExtra" value="60" onlick="...">
+                Baloons - 60&euro;
               </label></li>
         </ul>
         <br>
         <label class="checkbox">
           Music & Entertainment
         </label>
-          <ul style="list-style: none;">
+          <ul style="list-style: none">
             <li><label class="checkbox">
-            <input type="checkbox" name="selectExtra" value="music" onlick="...">
-              Band
+            <input type="checkbox" class="price" name="selectExtra" value="500" onlick="...">
+              Band - 500&euro;
             </label></li>
-            <li><label class="checkbox">
-              <input type="checkbox" name="selectExtra" value="music" onlick="...">
-                DJ
+            <li>
+              <label class="checkbox">
+              <input type="checkbox" class="price" name="selectExtra" value="800" onlick="...">
+                Classical quartette - 800&euro;
               </label></li>
             <li>
               <label class="checkbox">
-              <input type="checkbox" name="selectExtra" value="music" onlick="...">
-                Classical quartet
-              </label></li>
-            <li>
-              <label class="checkbox">
-              <input type="checkbox" name="selectExtra" value="music" onlick="...">
-                Entertainment for kids
+              <input type="checkbox" class="price" name="selectExtra" value="200" onlick="...">
+                Entertainment for kids - 200&euro;
               </label></li>
           </ul>
         <br>
         <label class="checkbox">
           Photographic service
         </label>
-        <ul style="list-style: none;">
+        <ul style="list-style: none">
           <li><label class="checkbox">
-          <input type="checkbox" name="selectExtra" value="photography" onlick="...">
-            All day service - 1 photographer
+          <input type="checkbox" class="price" name="selectExtra" value="1000" onlick="...">
+            All day service - 1 photographer - 1000&euro;
           </label></li>
           <li>
             <label class="checkbox">
-            <input type="checkbox" name="selectExtra" value="photography" onlick="...">
-              All day service - 2 photographers
+            <input type="checkbox" class="price" name="selectExtra" value="1400" onlick="...">
+              All day service - 2 photographers  - 1400&euro;
             </label></li>
           <li>
             <label class="checkbox">
-            <input type="checkbox" name="selectExtra" value="photography" onlick="...">
-              2 X photo albums
+            <input type="checkbox" class="price" name="selectExtra" value="100" onlick="...">
+              2 Photographic books - 100&euro;
             </label></li>
             <li>
               <label class="checkbox">
-              <input type="checkbox" name="selectExtra" value="photography" onlick="...">
-                Print of 1 canvas 60*80mm
+              <input type="checkbox" class="price" name="selectExtra" value="100" onlick="...">
+                Print of 1 canvas 60*80cm - 100&euro;
               </label></li>
-              <li>
-                <label class="checkbox">
-                <input type="checkbox" name="selectExtra" value="photography" onlick="...">
-                  Videographer 
-                </label></li>
         </ul>
         <br>
-        <label class="checkbox">
+<label class="checkbox">
           Extra information
         </label>
         <br>
-        <textarea id="text" name="text" placeholder="Do you have favorite flowers?" style="height:50px"></textarea>
+        <br>
+        <label for="style" style="color:white">Wedding style</label>
+        <select id="style" name="style">
+          <option value="Romantic">Romantic</option>
+          <option value="Country chic">Country chic</option>
+          <option value="Irish traditional">Irish traditional</option>
+          <option value="Bohemian Wedding">Bohemian Wedding</option>
+        </select>
+        <textarea id="text" name="text" placeholder="Do you have a favorite flowers?" style="height:50px"></textarea>
         <textarea id="text" name="text" placeholder="Does your wedding have a theme?" style="height:50px"></textarea>
-        <textarea id="text" name="text" placeholder="Does your wedding have a main colour scheme? " style="height:50px"></textarea>
-        <br>
-        <input type="submit" value="Request a quote">
-        <br>
+        <textarea id="text" name="text" placeholder="Does your wedding have a main color? " style="height:50px"></textarea>
+		    <input class="button" type="button" value="Compute total" onclick="computeTotal();">
+
+		    <div id="results"></div>
     </div>
   </form>
 </div>

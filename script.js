@@ -78,5 +78,61 @@ function checkVenue(venue){
   }
 
 //limit date before today
-var today = new Date().toISOString().split('T')[0];
-   document.getElementById("wedDate").setAttribute('min', today);
+function checkToday(today){
+  var today = new Date().toISOString().split('T')[0];
+  document.getElementById("wedDate").setAttribute('min', today);
+  }
+
+//compute total price booking page
+function computeTotal(){
+	let pricePPArray = document.getElementsByClassName("pricepp");
+	let fixedPrice = 0;
+	let totalPrice = 0;
+	let ppPrice = 0;
+	let guestsNumber = parseInt(document.getElementById("guestInput").value);
+
+	for (var i = 0; i < pricePPArray.length; i++) {
+    	console.log(pricePPArray[i].value);
+		if(pricePPArray[i].checked == true){
+			ppPrice+=parseInt(pricePPArray[i].value);
+		  }
+	}
+
+	let priceArray = document.getElementsByClassName("price");
+	for (var i = 0; i < priceArray.length; i++) {
+    	console.log(priceArray[i].value);
+		if(priceArray[i].checked == true){
+			fixedPrice+=parseInt(priceArray[i].value);
+		}
+	}
+	totalPrice = fixedPrice + ppPrice * guestsNumber;
+
+	let resultString = "Price Breakdown:<br>";
+	console.log("Price Breakdown:");
+	resultString += "Price Per person: " + ppPrice + "<br>";
+	console.log("Price Per person: " + ppPrice);
+	resultString += "Guests Number: " + guestsNumber + "<br>";
+	console.log("Guests Number: " + guestsNumber);
+	resultString += "Fixed costs: " + fixedPrice + "<br>";
+	console.log("Fixed costs: " + fixedPrice);
+	resultString += "Total: " + totalPrice + "<br>";
+	console.log("Total: " + totalPrice);
+
+	if (totalPrice > 10000){
+		totalPrice = totalPrice * 0.9;
+		resultString += "Discounted Price (10%): " + totalPrice + "<br>";
+		console.log("Discounted Price (10%): " + totalPrice);
+	}
+
+
+	document.getElementById("results").innerHTML = resultString;
+
+    //Do something
+
+	// getElementById("show-login");
+	//   if (x.style.display == "none") {
+	//     x.style.display = "block";
+	//   } else {
+	//     x.style.display = "none";
+	//   }
+}
