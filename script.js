@@ -78,7 +78,7 @@ function checkVenue(venue){
   }
 
 //limit date before today
-function checkToday(today){
+function checkToday(){
   var today = new Date().toISOString().split('T')[0];
   document.getElementById("wedDate").setAttribute('min', today);
   }
@@ -123,16 +123,5 @@ function computeTotal(){
 		resultString += "Discounted Price (10%): " + totalPrice + "<br>";
 		console.log("Discounted Price (10%): " + totalPrice);
 	}
-
-
 	document.getElementById("results").innerHTML = resultString;
-
-    //Do something
-
-	// getElementById("show-login");
-	//   if (x.style.display == "none") {
-	//     x.style.display = "block";
-	//   } else {
-	//     x.style.display = "none";
-	//   }
 }

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Wild Atlantic Wedding</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="favicon" type="FaviconLogo" href="...."> -->
+  <link rel="icon" type="image/x-icon" href="favicon2.ico">
   <link rel="stylesheet" href="styles.css">
   <script src="script.js"></script>
   <style>
@@ -39,7 +39,7 @@
   <div class="container-form">
   <form id="login-form" onsubmit="event.preventDefault(); validateForm();">
   <fieldset id="show-login" style="display: none;">
-  <legend Style="color: white; background-color: #004053;">Login</legend>
+  <legend class="legend-login">Login</legend>
   <label for="username">Username:</label><br>
     <input type="text" id="username" name="username"><br>
     <br>
@@ -61,14 +61,14 @@
 
     <div id="">
     </div>
-    
+
       <!--new code for extras layout-->
     <div class="extras">
 
       <div class="extrasDiv">
 
 
-            <h2 class="venueTitle"><input type="radio" class="weddingOption1" name="select-service"  onclick="showOption1()" > Catering</h2>
+            <h2 class="venueTitle" onclick="showOption1()" > Catering &#x25BC;</h2>
             <p class="show-detail1">
             <img class="extraImages" src="catering.jpeg" alt="Catering">
              We can provide catering for up to 300 people. We offer packages that include appetisers, mains and deserts. We also offer full cake packages along with specific design needs tailered for you. Full bar can be supplied as an etxra including champage or procesco receptions on arrival.
@@ -76,7 +76,7 @@
       </div>
 
       <div class ="extrasDiv">
-            <h2 class="venueTitle"><input type="radio" class="weddingOption2" name="select-service" onclick="showOption2()"> Decorations </h2>
+            <h2 class="venueTitle" onclick="showOption2()">Decorations &#x25BC;</h2>
             <p class="show-detail2">
             <img class="extraImages" src="decorations.jpeg" alt="Decorations">
             To make your dream day even more beauitful we offer a full decoration package that can be completely tailered to your own style and taste! We will transform any function room into a place of awe and beauty and make thos photographs even more special!
@@ -84,7 +84,7 @@
       </div>
 
       <div class="extrasDiv">
-            <h2 class="venueTitle"><input type="radio" class="weddingOption3" name="select-service" onclick="showOption3()"> Church Service</h2>
+            <h2 class="venueTitle" onclick="showOption3()"> Church Service &#x25BC;</h2>
             <p class="show-detail3">
             <img class="extraImages" src="service.jpeg" alt="Church Service">
             Wild Atlantic Weddings also offer as wedding service as an extra. This can be a civil or religious cermony depending on your wishes. This can as small or big as required depending on your chosen venue.
@@ -92,7 +92,7 @@
       </div>
 
       <div class="extrasDiv">
-        <h2 class="venueTitle"><input type="radio" class="weddingOption4" name="select-service" onclick="showOption4()"> Music & Entertainment </h2>
+        <h2 class="venueTitle" onclick="showOption4()"> Music & Entertainment &#x25BC;</h2>
         <p class="show-detail4">
         <img class="extraImages" src="jazzBand.jpg" alt="Jazz Band">
         Wether it's a DJ, a jazz band or an orcherstra or maybe even a comedian or a magician, we have a vast range of options to choose from which will finish your night off in style!
@@ -100,7 +100,7 @@
       </div>
 
       <div class="extrasDiv">
-        <h2 class="venueTitle"><input type="radio" class="weddingOption5" name="select-service" onclick="showOption5()"> Photography </h2>
+        <h2 class="venueTitle" onclick="showOption5()"> Photography &#x25BC;</h2>
         <p class="show-detail5">
         <img class="extraImages" src="photographerWed.jpg" alt="Photographer">
         Here at Wild Atlantic Weddings we pride ourselves in creating the most memorable experience possible for our customers. The most memorable moments should be captured in time and to do so we supply photographers of the highest quality to capture all the moments of your special day.

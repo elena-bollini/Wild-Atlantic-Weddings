@@ -1,115 +1,143 @@
 <!DOCTYPE html>
-<html  lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Wild Atlantic Wedding</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="favicon" type="FaviconLogo" href="...."> -->
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js"></script>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>
+			Wild Atlantic Wedding
+		</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/x-icon" href="favicon2.ico">
+		<link rel="stylesheet" href="styles.css">
+		<script src="script.js"></script><!--background image for each page-->
 
-  <!--background image for each page-->
-  <style>
-    .main-mypage{
-      background-image: url("beach_2.jpg");
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-  </style>
-
-</head>
-<body>
-  <header id="stickyNavbar">
-  <div class="header-mypage">
-<div><img id="header-logo" src="MicrosoftTeams-image.png"></div>
-<div id="header-navbar">
-  <ul id="navbar-menu">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="aboutUs.html" style="text-decoration: underline;">About us</a></li>
-    <li><a href="venues.html">Venues</a></li>
-    <li><a href="weddings.html">Extras</a></li>
-    <li><a href="book.html">Book</a></li>
-    <li><a href="contactUs.html">Contact us</a></li>
-  </ul>
-</div>
-<div class="button-div"><button type="button" class="button-login" onclick="showLogin();">Couple login</button></div>
-<br>
-<div>
-</div>
-<div class="container-form">
-<form id="login-form" onsubmit="event.preventDefault(); validateForm();">
-<fieldset id="show-login" style="display: none;">
-<legend Style="color: white; background-color: #004053;">Login</legend>
-<label for="username">Username:</label><br>
-    <input type="text" id="username" name="username"><br>
-    <br>
-    <label for="pwd">Password:</label><br>
-    <input type="password" id="password" name="password">
-    <br><br>
-        <div class="checkbox">
-          <label><input type="checkbox" name="remember"> Remember me</label>
-        </div>
-<br>
-<input type="submit" id="submit" value="Submit">
-</fieldset>
-</form>
-</div>
-</div>
-</header>
-<main>
-<div class="main-mypage" style="height: 400px;">
-  <div></div>
-<h1 style="text-align:center; width:650px; height:100px; padding-top: 40px" >We are dedicated to our weddings, planning every little aspect to make them perfect and unique</h1>
-<br>
-</div>
-<div class="column">
-  <div class="card">
-    <div class="container">
-      <img src="pexels-pixabay-372176.jpg" alt="Jack" style="width:90%">
-      <h2>Jack Hogan</h2>
-      <p class="title">Co. Founder</p>
-      <p>Wedding planner</p>
-      <p>Specialised in Irish tipical wedding and cousine</p>
-      <a href="contactUs.html">Contact us</a>
-    </div>
-  </div>
-</div>
-
-<div class="column">
-  <div class="card">
-    <div class="container">
-      <img src="pexels-caio-56926.jpg" alt="Elena" style="width:90%">
-      <h2>Elena Bollini</h2>
-      <p class="title">Co. Founder</p>
-      <p>Wedding planner</p>
-      <p>Specialised in design and italin cousine</p>
-      <a href="contactUs.html">Contact us</a>
-    </div>
-  </div>
-</div>
-</div>
-</main>
-<footer class="footer">
-<div class="footer-contact">
-<p>Kildare, Ireland </p>
-<ul class="footer__contacts">
-  <li>
-    <a>Tel: +353 81828384</a>
-  </li>
-  <li>|</li>
-  <li>
-    <a>Fax: +353 81828384</a>
-  </li>
-  <li>|</li>
-  <li>
-    <a>Email: WildAtlanticWeddings@info.ie</a>
-  </li>
-</ul>
-</div>
-</footer>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-</body>
+		<style>
+		.main-mypage{
+		background-image: url("beach_2.jpg");
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		}
+		</style>
+	</head>
+	<body>
+		<header id="stickyNavbar">
+			<div class="header-mypage">
+				<div>
+					<img id="header-logo" src="MicrosoftTeams-image.png" alt="Logo">
+				</div>
+				<div id="header-navbar">
+					<ul id="navbar-menu">
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+						<li>
+							<a href="aboutUs.html" style="text-decoration: underline;">About us</a>
+						</li>
+						<li>
+							<a href="venues.html">Venues</a>
+						</li>
+						<li>
+							<a href="weddings.html">Extras</a>
+						</li>
+						<li>
+							<a href="book.html">Book</a>
+						</li>
+						<li>
+							<a href="contactUs.html">Contact us</a>
+						</li>
+					</ul>
+				</div>
+				<div class="button-div">
+					<button type="button" class="button-login" onclick="showLogin();">Couple login</button>
+				</div><br>
+				<div class="container-form">
+					<form id="login-form" onsubmit="event.preventDefault(); validateForm();" name="login-form">
+						<fieldset id="show-login" style="display: none;">
+							<legend class="legend-login">Login</legend> <label for="username">Username:</label><br>
+							<input type="text" id="username" name="username"><br>
+							<br>
+							<label for="pwd">Password:</label><br>
+							<input type="password" id="password" name="password"><br>
+							<br>
+							<div class="checkbox">
+								<label><input type="checkbox" name="remember"> Remember me</label>
+							</div><br>
+							<input type="submit" id="submit" value="Submit">
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="main-mypage" style="height: 400px;">
+				<div></div>
+				<h1 style="text-align:center; width:650px; height:100px; padding-top: 40px">
+					We are dedicated to our weddings, planning every little aspect to make them perfect and unique
+				</h1><br>
+			</div>
+			<div class="column">
+				<div class="card">
+					<div class="container">
+						<img src="pexels-pixabay-372176.jpg" alt="Jack" style="width:90%">
+						<h2>
+							Jack Hogan
+						</h2>
+						<p class="title">
+							Co. Founder
+						</p>
+						<p>
+							Wedding planner
+						</p>
+						<p>
+							Specialised in Irish tipical wedding and cousine
+						</p><a href="contactUs.html">Contact us</a>
+					</div>
+				</div>
+			</div>
+			<div class="column">
+				<div class="card">
+					<div class="container">
+						<img src="pexels-caio-56926.jpg" alt="Elena" style="width:90%">
+						<h2>
+							Elena Bollini
+						</h2>
+						<p class="title">
+							Co. Founder
+						</p>
+						<p>
+							Wedding planner
+						</p>
+						<p>
+							Specialised in design and italin cousine
+						</p><a href="contactUs.html">Contact us</a>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer-contact">
+				<p>
+					Kildare, Ireland
+				</p>
+				<ul class="footer__contacts">
+					<li>
+						<a>Tel: +353 81828384</a>
+					</li>
+					<li>|
+					</li>
+					<li>
+						<a>Fax: +353 81828384</a>
+					</li>
+					<li>|
+					</li>
+					<li>
+						<a>Email: WildAtlanticWeddings@info.ie</a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	</body>
 </html>
