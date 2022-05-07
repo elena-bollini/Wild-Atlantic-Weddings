@@ -1,0 +1,159 @@
+
+<!--
+  Web Design and Client-Side Scripting Project 
+      By  Jack Hogan and Elena Bollini
+-->
+
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <!--Search Engine Optimization Title Name-->
+  <title>Wedding Extras</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="images/favicon2.ico">
+
+  <!--External CSS-->
+  <link rel="stylesheet" href="styles.css">
+
+  <!--External JS-->
+  <script src="script.js"></script>
+
+<!--background image for each page-->
+  <style>
+    .main-mypage{
+      background-image: url("images/extrasPage.jpg");
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- sticky header with logo, navbar and login -->
+  <header id="stickyNavbar">
+    <div class="header-mypage">
+        
+        <!--Logo onclick 'Homepage'-->
+        <div>
+            <a href="index.html"><img id="header-logo" src="images/MicrosoftTeams-image.png" alt="Logo"></a>
+        </div>
+      <!--Navbar-->
+      <div id="header-navbar">
+        <ul id="navbar-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutUs.html">About us</a></li>
+            <li><a href="wedding-venues.html">Venues</a></li>
+            <li><a href="wedding-extras.html" style="text-decoration: underline;">Extras</a></li>
+            <li><a href="book-your-wedding.html">Book</a></li>
+            <li><a href="contactUs.html">Contact us</a></li>
+        </ul>
+      </div>
+    <div class="button-div"><button type="button" class="button-login" onclick="showLogin();">Couple login</button></div>
+    <br>
+    <div></div>
+
+    <!-- login form -->
+        <div class="container-form">
+          <form id="login-form" onsubmit="event.preventDefault(); validateForm();">
+            <fieldset id="show-login" style="display: none;">
+              <legend class="legend-login">Login</legend>
+              <label for="username">Username:</label><br>
+                  <input type="text" id="username" name="username"><br>
+                <br>
+                  <label for="pwd">Password:</label><br>
+                  <input type="password" id="password" name="password">
+                <br><br>
+                    <div class="checkbox">
+                      <label><input type="checkbox" name="remember"> Remember me</label>
+                    </div>
+              <br>
+              <input type="submit" id="submit" value="Submit">
+            </fieldset>
+          </form>
+        </div>
+    </div>
+  </header>
+<main>
+  <div class="main-mypage">
+
+    <div id="">
+    </div>
+
+      <!--Extra Options Layout-->
+    <div class="extras">
+
+      <div class="extrasDiv">
+
+
+            <h2 class="venueTitle" onclick="showOption1()" > Catering &#x25BC;</h2>
+            <p class="show-detail1">
+            <img class="extraImages" src="images/catering.jpeg" alt="Catering">
+             We can provide catering for up to 300 people. We offer packages that include appetisers, mains and deserts. We also offer full cake packages along with specific design needs tailered for you. Full bar can be supplied as an etxra including champage or procesco receptions on arrival.
+            </p>
+      </div>
+
+      <div class ="extrasDiv">
+            <h2 class="venueTitle" onclick="showOption2()">Decorations &#x25BC;</h2>
+            <p class="show-detail2">
+            <img class="extraImages" src="images/decorations.jpeg" alt="Decorations">
+            To make your dream day even more beauitful we offer a full decoration package that can be completely tailered to your own style and taste! We will transform any function room into a place of awe and beauty and make thos photographs even more special!
+            </p>
+      </div>
+
+      <div class="extrasDiv">
+            <h2 class="venueTitle" onclick="showOption3()"> Church Service/ Civil Ceremony &#x25BC;</h2>
+            <p class="show-detail3">
+            <img class="extraImages" src="images/service.jpeg" alt="Church Service">
+            Wild Atlantic Weddings also offer as wedding service as an extra. This can be a civil or religious cermony depending on your wishes. This can as small or big as required depending on your chosen venue.
+            </p>
+      </div>
+
+      <div class="extrasDiv">
+        <h2 class="venueTitle" onclick="showOption4()"> Music & Entertainment &#x25BC;</h2>
+        <p class="show-detail4">
+        <img class="extraImages" src="images/jazzBand.jpg" alt="Jazz Band">
+        Wether it's a DJ, a jazz band or an orcherstra or maybe even a comedian or a magician, we have a vast range of options to choose from which will finish your night off in style!
+        </p>
+      </div>
+
+      <div class="extrasDiv">
+        <h2 class="venueTitle" onclick="showOption5()"> Photography &#x25BC;</h2>
+        <p class="show-detail5">
+        <img class="extraImages" src="images/photographerWed.jpg" alt="Photographer">
+        Here at Wild Atlantic Weddings we pride ourselves in creating the most memorable experience possible for our customers. The most memorable moments should be captured in time and to do so we supply photographers of the highest quality to capture all the moments of your special day.
+        </p>
+  </div>
+
+    </div><!--end of new code-->
+
+    </div>
+
+</main>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-contact">
+            <p>Kildare, Ireland </p>
+            <ul class="footer__contacts">
+            <li>
+                <a>Tel: +353 81828384</a>
+            </li>
+            <li>|</li>
+            <li>
+                <a>Fax: +353 81828384</a>
+            </li>
+            <li>|</li>
+            <li>
+                <a>Email: WildAtlanticWeddings@info.ie</a>
+            </li>
+            </ul>
+        </div>
+    </footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</body>
+</html>

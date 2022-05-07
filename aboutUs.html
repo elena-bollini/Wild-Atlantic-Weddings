@@ -1,18 +1,29 @@
+
+<!--
+  Web Design and Client-Side Scripting Project 
+      By  Jack Hogan and Elena Bollini
+-->
 <!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>
-			Wild Atlantic Wedding
-		</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="icon" type="image/x-icon" href="favicon2.ico">
-		<link rel="stylesheet" href="styles.css">
-		<script src="script.js"></script><!--background image for each page-->
 
+		<!--Search Engine Optimization Title Name-->
+		<title> About Us - Wedding Planners </title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/x-icon" href="images/favicon2.ico">
+
+		<!--External CSS-->
+		<link rel="stylesheet" href="styles.css">
+
+		<!--External JS-->
+		<script src="script.js"></script>
+
+		<!--background image for each page-->
 		<style>
 		.main-mypage{
-		background-image: url("beach_2.jpg");
+		background-image: url("images/beach_2.jpg");
 		background-attachment: fixed;
 		background-position: center;
 		background-repeat: no-repeat;
@@ -23,29 +34,19 @@
 	<body>
 		<header id="stickyNavbar">
 			<div class="header-mypage">
+
+				<!--Logo onclick 'Homepage'-->
 				<div>
-					<img id="header-logo" src="MicrosoftTeams-image.png" alt="Logo">
+					<a href="index.html"><img id="header-logo" src="images/MicrosoftTeams-image.png" alt="Logo"></a>
 				</div>
 				<div id="header-navbar">
 					<ul id="navbar-menu">
-						<li>
-							<a href="index.html">Home</a>
-						</li>
-						<li>
-							<a href="aboutUs.html" style="text-decoration: underline;">About us</a>
-						</li>
-						<li>
-							<a href="venues.html">Venues</a>
-						</li>
-						<li>
-							<a href="weddings.html">Extras</a>
-						</li>
-						<li>
-							<a href="book.html">Book</a>
-						</li>
-						<li>
-							<a href="contactUs.html">Contact us</a>
-						</li>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="aboutUs.html" style="text-decoration: underline;">About us</a></li>
+						<li><a href="wedding-venues.html">Venues</a></li>
+						<li><a href="wedding-extras.html">Extras</a></li>
+						<li><a href="book-your-wedding.html">Book</a></li>
+						<li><a href="contactUs.html">Contact us</a></li>
 					</ul>
 				</div>
 				<div class="button-div">
@@ -72,14 +73,14 @@
 		<main>
 			<div class="main-mypage" style="height: 400px;">
 				<div></div>
-				<h1 style="text-align:center; width:650px; height:100px; padding-top: 40px">
-					We are dedicated to our weddings, planning every little aspect to make them perfect and unique
+				<h1 style="text-align:center; width:650px; height:100px; padding-top: 40px" id = "aboutUsText">
+					Here are Wild Atlantic Weddings we are dedicated to every aspect of your wedding, from design and supply to arranging and catering! We pride ourselves in providing the most spectacular and memorable wedding experience possible, while keeping your tastes and styles at heart.
 				</h1><br>
 			</div>
 			<div class="column">
 				<div class="card">
 					<div class="container">
-						<img src="pexels-pixabay-372176.jpg" alt="Jack" style="width:90%">
+						<img src="images/pexels-pixabay-372176.jpg" alt="Jack" style="width:90%">
 						<h2>
 							Jack Hogan
 						</h2>
@@ -87,10 +88,10 @@
 							Co. Founder
 						</p>
 						<p>
-							Wedding planner
+							Wedding Planner
 						</p>
 						<p>
-							Specialised in Irish tipical wedding and cousine
+							Specialised in Irish traditional weddings and cuisine
 						</p><a href="contactUs.html">Contact us</a>
 					</div>
 				</div>
@@ -98,7 +99,7 @@
 			<div class="column">
 				<div class="card">
 					<div class="container">
-						<img src="pexels-caio-56926.jpg" alt="Elena" style="width:90%">
+						<img src="images/pexels-caio-56926.jpg" alt="Elena" style="width:90%">
 						<h2>
 							Elena Bollini
 						</h2>
@@ -106,10 +107,10 @@
 							Co. Founder
 						</p>
 						<p>
-							Wedding planner
+							Wedding Planner
 						</p>
 						<p>
-							Specialised in design and italin cousine
+							Specialised in design and Italian cuisine
 						</p><a href="contactUs.html">Contact us</a>
 					</div>
 				</div>
@@ -117,9 +118,7 @@
 		</main>
 		<footer class="footer">
 			<div class="footer-contact">
-				<p>
-					Kildare, Ireland
-				</p>
+				<p>	Kildare, Ireland</p>
 				<ul class="footer__contacts">
 					<li>
 						<a>Tel: +353 81828384</a>

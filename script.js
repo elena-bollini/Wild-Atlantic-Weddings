@@ -45,7 +45,7 @@ function validationSubmition(){
   }else if (y ==null || y.length < 7){
     alert("email must be filled out");
     return false;
-    } else {alert("Thank you. We will send you same wedding options");
+    } else {alert("Thank you for your message. We will send you some wedding options and reply as soon as possible!");
   }
 }
 
@@ -109,19 +109,19 @@ function computeTotal(){
 
 	let resultString = "Price Breakdown:<br>";
 	console.log("Price Breakdown:");
-	resultString += "Price Per person: " + ppPrice + "<br>";
-	console.log("Price Per person: " + ppPrice);
+	resultString += "Price Per person: €" + ppPrice + "<br>";
+	console.log("Price Per person: €" + ppPrice);
 	resultString += "Guests Number: " + guestsNumber + "<br>";
 	console.log("Guests Number: " + guestsNumber);
-	resultString += "Fixed costs: " + fixedPrice + "<br>";
-	console.log("Fixed costs: " + fixedPrice);
-	resultString += "Total: " + totalPrice + "<br>";
-	console.log("Total: " + totalPrice);
+	resultString += "Extra costs: €" + fixedPrice + "<br>";
+	console.log("Extra costs: €" + fixedPrice);
+	resultString += "Total: €" + totalPrice + "<br>";
+	console.log("Total: €" + totalPrice);
 
 	if (totalPrice > 10000){
 		totalPrice = totalPrice * 0.9;
-		resultString += "Discounted Price (10%): " + totalPrice + "<br>";
-		console.log("Discounted Price (10%): " + totalPrice);
+		resultString += "Discounted Price (10%): €" + totalPrice + "<br>";
+		console.log("Discounted Price (10%): €" + totalPrice);
 	}
 	document.getElementById("results").innerHTML = resultString;
 }

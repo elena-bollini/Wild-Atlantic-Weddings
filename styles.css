@@ -7,7 +7,7 @@ body {
 h1{
   font-family: "Goudy Old Style",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-shadow: 3px 3px 2px black;
-  color:white;
+  color:#ffffff;
 }
 
 /* header*/
@@ -118,15 +118,6 @@ h1{
   background-color: #F1EBE4;
   font-family: "Goudy Old Style",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
-
-  /* The image used */
-  background-image: url("beachBackground.jpg");
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .main-mypage > div{
@@ -271,23 +262,18 @@ input[type="submit"]:hover {
   display: inline-block;
   background-color: #004053;
   color: #e9e9e9;
-/*  height: 350px;*/
-/*  width: 90%;*/
+
+  font-size: large;
   margin: 15px;
   border-radius: 10px;
-/*  border: solid 1px white;*/
   padding: 10px;
 }
 
 
 .venueImages{
   max-width: 50%;
-/*  max-height: 100%;*/
   float: left;
-/*  border-radius: 10px;*/
-/*  margin: 5px;*/
-/*  padding: 5px;*/
-/*  border: solid 5px #004053;*/
+
 }
 
 .venueTitle{
@@ -296,6 +282,7 @@ input[type="submit"]:hover {
   color: #004053;
   font-family: "Goudy Old Style",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   border-radius: 10px;
+  font-size: x-large;
 }
 
 .venueTitle:hover{
@@ -325,6 +312,7 @@ input[type="submit"]:hover {
   margin: 15px;
   border-radius: 10px;
   border: ridge 2px white;
+  font-size: large;
 }
 
 .extraImages{
@@ -348,3 +336,5 @@ input[type="submit"]:hover {
 #guestInput{
   width: 50px;
 }
+
+

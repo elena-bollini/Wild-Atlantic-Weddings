@@ -1,16 +1,27 @@
+
+<!--
+  Web Design and Client-Side Scripting Project 
+      By  Jack Hogan and Elena Bollini
+-->
+
 <!DOCTYPE html>
 <html  lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Wild Atlantic Wedding</title>
+
+  <!--Search Engine Optimization Title Name-->
+  <title>Contact Us Wedding Advice</title>
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/x-icon" href="favicon2.ico">
+  <link rel="icon" type="image/x-icon" href="images/favicon2.ico">
+
+  <!--External CSS-->
   <link rel="stylesheet" href="styles.css">
 
     <!--background image for each page-->
     <style>
       .main-mypage{
-        background-image: url("contactUs.jpg");
+        background-image: url("images/contactUs.jpg");
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
@@ -22,42 +33,50 @@
 <body>
   <!-- sticky header with logo, navbar and login -->
   <header id="stickyNavbar">
-  <div class="header-mypage">
-  <div><img id="header-logo" src="MicrosoftTeams-image.png" alt="Logo"></div>
-  <div id="header-navbar">
-  <ul id="navbar-menu">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="aboutUs.html">About us</a></li>
-    <li><a href="venues.html">Venues</a></li>
-    <li><a href="weddings.html">Extras</a></li>
-    <li><a href="book.html">Book</a></li>
-    <li><a href="contactUs.html" style="text-decoration: underline;">Contact us</a></li>
-  </ul>
-  </div>
-  <div class="button-div"><button type="button" class="button-login" onclick="showLogin();">Couple login</button></div>
-  <br>
-  <div></div>
-  <!-- login form -->
-  <div class="container-form">
-  <form id="login-form" onsubmit="event.preventDefault(); validateForm();">
-  <fieldset id="show-login" style="display: none;">
-  <legend class="legend-login">Login</legend>
-  <label for="username">Username:</label><br>
-    <input type="text" id="username" name="username"><br>
+    <div class="header-mypage">
+
+				<!--Logo onclick 'Homepage'-->
+				<div>
+					<a href="index.html"><img id="header-logo" src="images/MicrosoftTeams-image.png" alt="Logo"></a>
+				</div>
+      <!--Navbar-->
+      <div id="header-navbar">
+        <ul id="navbar-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutUs.html">About us</a></li>
+          <li><a href="wedding-venues.html">Venues</a></li>
+          <li><a href="wedding-extras.html">Extras</a></li>
+          <li><a href="book-your-wedding.html">Book</a></li>
+          <li><a href="contactUs.html" style="text-decoration: underline;">Contact us</a></li>
+        </ul>
+      </div>
+    <div class="button-div"><button type="button" class="button-login" onclick="showLogin();">Couple login</button></div>
     <br>
-    <label for="pwd">Password:</label><br>
-    <input type="password" id="password" name="password">
-    <br><br>
-        <div class="checkbox">
-          <label><input type="checkbox" name="remember"> Remember me</label>
+    <div></div>
+
+    <!-- login form -->
+        <div class="container-form">
+          <form id="login-form" onsubmit="event.preventDefault(); validateForm();">
+            <fieldset id="show-login" style="display: none;">
+              <legend class="legend-login">Login</legend>
+              <label for="username">Username:</label><br>
+                  <input type="text" id="username" name="username"><br>
+                <br>
+                  <label for="pwd">Password:</label><br>
+                  <input type="password" id="password" name="password">
+                <br><br>
+                    <div class="checkbox">
+                      <label><input type="checkbox" name="remember"> Remember me</label>
+                    </div>
+              <br>
+              <input type="submit" id="submit" value="Submit">
+            </fieldset>
+          </form>
         </div>
-  <br>
-  <input type="submit" id="submit" value="Submit">
-  </fieldset>
-  </form>
-</div>
-  </div>
+    </div>
   </header>
+
+<!--Start of main body-->
 <main>
   <div class="main-mypage">
     <div></div>
@@ -66,45 +85,57 @@
     <h1>Contact us</h1>
     <h2 style="color:white; text-shadow: 3px 3px 2px black;">Tell us about your dream day and we will make it come true: </h2>
   </div>
-  <div class="row">
-    <div class="column">
-      <img src="Wild-Atlantic-Weddings-Logo_2-modified.png" alt="Logo" style="width: 90%;">
-    </div>
-    <div class="column">
-      <form id="submitForm" onsubmit="validationSubmition()">
-        <label for="name" style="color:white; text-shadow: 3px 3px 2px black;">Name</label>
-        <input type="text" id="name" name="name" placeholder="Your name..">
-        <label for="email" style="color:white; text-shadow: 3px 3px 2px black;">Email</label>
-        <input type="text" id="email" name="email" placeholder="Your email..">
-        <label for="text" style="color:white; text-shadow: 3px 3px 2px black;">Contact us, we will replay as soon as we can</label>
-        <textarea id="text" name="text" placeholder="..." style="height:150px"></textarea>
-        <input type="submit" value="Submit">
-      </form>
-    </div>
+      <div class="row">
+        <div class="column">
+
+          <!--Logo-->
+          <img src="images/Wild-Atlantic-Weddings-Logo_2-modified.png" alt="Logo" style="width: 90%;">
+        </div>
+        <div class="column">
+          <form id="submitForm" onsubmit="validationSubmition()">
+            
+            <!--Name-->
+            <label for="name" style="color:white; text-shadow: 3px 3px 2px black;">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name..">
+            
+            <!--Email-->
+            <label for="email" style="color:white; text-shadow: 3px 3px 2px black;">Email</label>
+            <input type="text" id="email" name="email" placeholder="Your email..">
+
+            <!--Message-->
+            <label for="text" style="color:white; text-shadow: 3px 3px 2px black;">Contact us, we will replay as soon as we can</label>
+            <textarea id="text" name="text" placeholder="..." style="height:150px"></textarea>
+            
+            <!--Submit-->
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+      </div>
   </div>
-</div>
-<div></div>
+  <div>
+
+  </div><!--Right side-->
   </div>
-</main>
-<!-- footer -->
-<footer class="footer">
-<div class="footer-contact">
-<p>Kildare, Ireland </p>
-<ul class="footer__contacts">
-  <li>
-    <a>Tel: +353 81828384</a>
-  </li>
-  <li>|</li>
-  <li>
-    <a>Fax: +353 81828384</a>
-  </li>
-  <li>|</li>
-  <li>
-    <a>Email: WildAtlanticWeddings@info.ie</a>
-  </li>
-</ul>
-</div>
-</footer>
+</main><!--End of main-->
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer-contact">
+        <p>Kildare, Ireland </p>
+        <ul class="footer__contacts">
+          <li>
+            <a>Tel: +353 81828384</a>
+          </li>
+          <li>|</li>
+          <li>
+            <a>Fax: +353 81828384</a>
+          </li>
+          <li>|</li>
+          <li>
+            <a>Email: WildAtlanticWeddings@info.ie</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
 <script src="script.js"></script>
 </body>
 </html>
