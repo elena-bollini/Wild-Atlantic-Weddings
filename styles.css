@@ -254,7 +254,8 @@ input[type="submit"]:hover {
 /*venues css*/
 .venueRows {
   width:100%;
-  background-color: none;
+  background-color: #fff;
+  background-color: rgba(255,255,255,0);
   text-align: left;
 }
 
@@ -297,7 +298,8 @@ input[type="submit"]:hover {
 
 .extras{
   display: inline-block;
-  background-color:none;
+  background-color: #fff;
+  background-color: rgba(255,255,255,0);
   color: #e9e9e9;
   height: fit-content;
   width: 90%;
